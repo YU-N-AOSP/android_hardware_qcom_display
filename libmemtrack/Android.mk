@@ -18,6 +18,9 @@ LOCAL_PATH := $(call my-dir)
 # hw/<POWERS_HARDWARE_MODULE_ID>.<ro.hardware>.so
 include $(CLEAR_VARS)
 
+# b/24171136 many files not compiling with clang/llvm yet
+LOCAL_CLANG := false
+
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_C_INCLUDES += hardware/libhardware/include
 LOCAL_CFAGS := -Wconversion -Wall -Werror

@@ -17,6 +17,9 @@ LOCAL_PATH:= $(call my-dir)
 # hw/<COPYPIX_HARDWARE_MODULE_ID>.<ro.board.platform>.so
 include $(CLEAR_VARS)
 
+# b/24171136 many files not compiling with clang/llvm yet
+LOCAL_CLANG := false
+
 LOCAL_SRC_FILES := lights.c
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_SHARED_LIBRARIES := liblog
