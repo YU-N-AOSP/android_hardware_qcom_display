@@ -668,6 +668,8 @@ struct hwc_context_t {
     bool mUseMetaDataRefreshRate;
     //struct holds the information about display tuning service library.
     struct qdcm_info mQdcmInfo;
+    // Indicates whether cool color temperature is enabled.
+    bool mCoolColorTemperatureEnabled;
 };
 
 namespace qhwc {

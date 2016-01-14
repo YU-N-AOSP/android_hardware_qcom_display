@@ -416,6 +416,8 @@ void initContext(hwc_context_t *ctx)
     // Initializing boot anim completed check to false
     ctx->mBootAnimCompleted = false;
 
+    ctx->mCoolColorTemperatureEnabled = false;
+
     // Initialize gpu perfomance hint related parameters
 #ifdef QTI_BSP
     ctx->mEglLib = NULL;
